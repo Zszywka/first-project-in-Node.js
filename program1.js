@@ -1,9 +1,8 @@
 process.stdin.setEncoding('utf-8');
 
 process.stdin.on('readable', function() {
-// metoda read() odczytuje co podał użytkownik/wczytaj dane od uzytkownika
     var input = process.stdin.read();
-// jesli uzytkownik cos wpisał
+
     if (input !== null) {
 
       var instruction = input.toString().trim();
